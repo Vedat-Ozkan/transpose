@@ -14,6 +14,13 @@ struct Key {
     return false;
   }
 
+  bool operator==(string const sym) {
+    if (sym == key || find(enharms.begin(), enharms.end(), sym) != enharms.end()) {
+      return true;
+    }
+    return false;
+  }
+
 };
 
 struct Keys {
@@ -39,6 +46,15 @@ struct Keys {
       count--;
     }
     return count < 0 ? -1 * count : count;
+  }
+
+  Key find(string symbol) {
+    for (auto i : TTET) {
+      if (i == symbol) {
+        return i;
+      }
+    }
+    return Key{};
   }
 
   Key transpose(Key k, int factor) {
