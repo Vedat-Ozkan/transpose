@@ -25,10 +25,10 @@ struct Key {
 
 struct Keys {
   vector<Key> TTET = {
-    Key{"A", {"G##, Bbb"}}, Key{"Bb", {"A#, Cbb"}}, Key{"B", {"A##, Cb"}},
-    Key{"C", {"B#, Dbb"}}, Key{"C#", {"B##, Db"}}, Key{"D", {"C##, Ebb"}},
-    Key{"Eb", {"D#, Fbb"}}, Key{"E", {"D##, Fb"}}, Key{"F", {"E#, Gbb"}},
-    Key{"F#", {"E##, Gb"}}, Key{"G", {"F##, Abb"}}, Key{"Ab", {"G#, Bbb"}}
+    Key{"A", {"G##", "Bbb"}}, Key{"Bb", {"A#", "Cbb"}}, Key{"B", {"A##", "Cb"}},
+    Key{"C", {"B#", "Dbb"}}, Key{"C#", {"B##", "Db"}}, Key{"D", {"C##", "Ebb"}},
+    Key{"Eb", {"D#", "Fbb"}}, Key{"E", {"D##", "Fb"}}, Key{"F", {"E#", "Gbb"}},
+    Key{"F#", {"E##", "Gb"}}, Key{"G", {"F##", "Abb"}}, Key{"Ab", {"G#", "Bbb"}}
   };
 
   int difference(Key k, Key l) {

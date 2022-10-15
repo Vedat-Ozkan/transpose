@@ -5,6 +5,11 @@
 		}
 	],
 	"settings": {
-		"editor.colorDecorators": false
+		"editor.colorDecorators": false,
+		"files.associations": {
+			"*.ejs": "html",
+			"ostream": "cpp",
+			"iostream": "cpp"
+		}
 	}
 }
